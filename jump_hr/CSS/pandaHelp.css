@@ -1,0 +1,29 @@
+.pandaOrAi{
+	background-color: white;
+	display: none;
+	margin: auto;
+	position: absolute;
+	top: 160px;
+	left: 10px;
+	z-index:999;
+	border-radius: 10px;
+	border: 5px solid rgba(255,255,255,.4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pandaOrAi p{
+	width: 350px;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.pandaOrAi input{
+	margin: 0 40px 10px;
+	padding: 3px 5px;
+	border-radius: 5px;
+	background-color: #eee;
+	cursor: pointer;
+	outline: none;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jump</title>
+        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="images/pandaral.png" type="image/x-ico">
+        <link rel="stylesheet" href="CSS/jump.css">
+        <link rel="stylesheet" href="CSS/auto.css">
+        <link rel="stylesheet" href="CSS/pandaHelp.css">
+        <script type="text/javascript" src="JS/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <div class="mask">
+            <div class="content">
+                <div class="score-container">
+                    <p class="title">Score</p>
+                    <p class="score">0</p>
+                </div>
+                <button class="restart">Restart</button>
+            </div>
+        </div>
+        <div class="info">
+            <a class="title"  target="_blank">Jump</a>
+            <div class="score-gaming">
+                Score：<span class="score-current">0</span>
+            </div>
+        </div>
+        <div class="btnBox">
+            <input type="button" id="chooseProbBtn" value="choose player's level">
+            <input type="button" id="stopBtn" value="stop automatic">
+        </div>
+        <div class="fadeWrap">
+            <div class="formBox"></div>
+            <form action="" class="porbForm">
+                <fieldset>
+                    <legend>Choose player's level</legend>
+                    <div class="probBox">
+                        <!-- <input type="radio" id="prob90" name="probName" value="1"><label for="prob90">10</label> -->
+                        <input type="radio" id="prob90" name="probName" value="0.9"><label for="prob90">9</label>
+                        <input type="radio" id="prob80" name="probName" value="0.8"><label for="prob80">8</label>
+                        <input type="radio" id="prob70" name="probName" value="0.7"><label for="prob70">7</label>
+                        <input type="radio" id="prob60" name="probName" value="0.6"><label for="prob60">6</label>
+                        <input type="radio" id="prob50" name="probName" value="0.5"><label for="prob50">5</label>
+                        <input type="radio" id="prob40" name="probName" value="0.4"><label for="prob40">4</label>
+                        <input type="radio" id="prob30" name="probName" value="0.3"><label for="prob30">3</label>
+                        <input type="radio" id="prob20" name="probName" value="0.2"><label for="prob20">2</label>
+                        <input type="radio" id="prob10" name="probName" value="0.1"><label for="prob10">1</label>
+                    </div>
+                    <div class="confirmBox">
+                        <input type="button" id="confirmBtn" value="start auto jump">
+                        <input type="button" id="cancelBtn" value="cancel">
+                        <input type="reset" id="resetForm" style="display:none">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="pandaOrAi">
+            <p>Which one do you prefer?</p>
+            <input type="button" id="panda" value="Panda Jump"><input type="button" id="computer" value="AI Jump">
+        </div>
+        <script src="JS/three.js"></script>
+        <script src="JS/jump.js"></script>
+        <script src="JS/main.js"></script>
+    </body>
+</html>
